@@ -18,20 +18,41 @@ public class Practica01 {
     }
 
     public static boolean esSinRepetido(String s) {
-        if(s.length() == 0 || s.length() == 1) { return true; }
-        else if (s.charAt(0) != s.charAt(0)+1) { return esSinRepetido(s.substring(1));}
-        else {return false;}
+        if(s.length() <= 1) { return true; }
+        else if ( s.charAt(0) == s.charAt(1)) { return false;}
+        else {return esSinRepetido(s.substring(1));}
     }
 
-
-
+    public static int fibrec(int n) {
+        return n <= 1 ? n : fibrec(n - 1) + fibrec(n - 2);
+    }
+    public static int fibiter(int n) {
+        int siguiente = 1, actual = 0, aux = 0;
+        for (long i = 1; i <= n; i++) {
+            aux = actual;
+            actual = siguiente;
+            siguiente = siguiente + aux;
+        }
+        return actual;
+    }
+    /*
+    a) En la recursiva hasta el 47 y en la iterativa probé hasta 999999999 que es el largo maximo para un int
+        y sigue dando una respuesta rapida.
+    b)  -1323752223
+     */
 
 
     public static void main(String [] args) {
+        /*
         System.out.println("Resultado: " + sumatoria(15));
         System.out.println("Resultado: " + cantidadVocales("Banana"));
         System.out.println("Resultado: " + esCapicua("neuquen"));
-        System.out.println("Falso: " + esSinRepetido("Banana"));
-        System.out.println("Verdadero: " + esSinRepetido("piedra"));
+
+        System.out.println("Falso: " + esSinRepetido("anana"));
+        System.out.println("Verdadero: " + esSinRepetido("aeiou"));
+        */
+        System.out.println("Recursivo: " + fibrec(46));
+        System.out.println("Iterativo: " + fibiter(46));
+
     }
 }
