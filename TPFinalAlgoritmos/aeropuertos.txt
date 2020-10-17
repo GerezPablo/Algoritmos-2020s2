@@ -1,0 +1,6 @@
+EZE Ministro-Pistarini Ezeiza Argentina 14.22 3 2 1
+AEP Aeroparque-Jorge-Newbery CABA Argentina 20.13 1 4 5
+LIM Aeropuerto-Internacional-Jorge-Chavez Lima Peru 30.13 5 5 5
+MIA Aeropuerto-Internacional-de-Miami Miami Usa 43.87 24 18 20
+GIG Aeropuerto-Internacional-de-Galeão Rio-de-Janeiro Brasil 21.55 4 1 9
+JFK Aeropuerto-Internacional-John-F.-Kennedy New-York Argentina 70.61 4 10 2

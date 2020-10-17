@@ -44,21 +44,4 @@ public class Practica01 {
     public int mcd(int a, int b) {
         return  b == 0 ? a: mcd(b, (a % b));
     }
-
-
-    public static void main(String [] args) {
-
-        System.out.println("Resultado: " + sumatoria(15));
-
-        System.out.println("Resultado: " + cantidadVocales("Banana"));
-
-        System.out.println("Resultado: " + esCapicua("neuquen"));
-
-        System.out.println("Falso: " + esSinRepetido("anana"));
-        System.out.println("Verdadero: " + esSinRepetido("aeiou"));
-
-        System.out.println("Fibonacci Recursivo: " + fibrec(46));
-        System.out.println("Fibonacci Iterativo: " + fibiter(46));
-
-    }
 }
